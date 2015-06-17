@@ -1,0 +1,112 @@
+[drp354@192-168-140-129 cusp-dataset-search]$ mortar local:luigi luigiscripts/cusp_dataset_etl.py --data-date "2014-11-19" --environment "dev"
+Taking code snapshot... done
+Sending code snapshot to Mortar... done
+2014-11-20 18:18:15,195 [26946:MainThread] (worker.py:275)  DEBUG - Checking if ProcessDay(environment=dev, data_date=2014-11-19) is complete
+2014-11-20 18:18:15,343 [26946:MainThread] (worker.py:327)  INFO  - Scheduled ProcessDay(environment=dev, data_date=2014-11-19) (PENDING)
+2014-11-20 18:18:15,344 [26946:MainThread] (worker.py:275)  DEBUG - Checking if Geocode(run_on_single_use_cluster=False, use_spot_instances=True, git_ref=not-set-flag, notify_on_job_finish=False, job_polling_interval=5, num_polling_retries=3, pig_version=0.12, input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/test.json, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19, output_data_path=s3://cusp-dataset-search-dev/output/2014-11-19/test.json, geojson_s3_bucket=cusp-dataset-search-dev, geojson_s3_key=input/geo/ny_zipcodes.json, cluster_size=0) is complete
+2014-11-20 18:18:15,538 [26946:MainThread] (s3.py:89)  DEBUG - Path s3://cusp-dataset-search-dev/output/2014-11-19/test.json does not exist
+2014-11-20 18:18:15,541 [26946:MainThread] (worker.py:327)  INFO  - Scheduled Geocode(run_on_single_use_cluster=False, use_spot_instances=True, git_ref=not-set-flag, notify_on_job_finish=False, job_polling_interval=5, num_polling_retries=3, pig_version=0.12, input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/test.json, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19, output_data_path=s3://cusp-dataset-search-dev/output/2014-11-19/test.json, geojson_s3_bucket=cusp-dataset-search-dev, geojson_s3_key=input/geo/ny_zipcodes.json, cluster_size=0) (PENDING)
+2014-11-20 18:18:15,541 [26946:MainThread] (worker.py:275)  DEBUG - Checking if TransformInputData(input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/test.json, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19) is complete
+2014-11-20 18:18:15,778 [26946:MainThread] (s3.py:89)  DEBUG - Path s3://cusp-dataset-search-dev/work/2014-11-19/test.json does not exist
+2014-11-20 18:18:15,780 [26946:MainThread] (worker.py:327)  INFO  - Scheduled TransformInputData(input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/test.json, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19) (PENDING)
+2014-11-20 18:18:15,781 [26946:MainThread] (worker.py:275)  DEBUG - Checking if FileExists(path=s3://cusp-dataset-search-dev/input/2014-11-19/test.metadata) is complete
+2014-11-20 18:18:15,947 [26946:MainThread] (s3.py:89)  DEBUG - Path s3://cusp-dataset-search-dev/input/2014-11-19/test.metadata does not exist
+2014-11-20 18:18:15,948 [26946:MainThread] (worker.py:306)  WARNI - Task FileExists(path=s3://cusp-dataset-search-dev/input/2014-11-19/test.metadata) is not complete and run() is not implemented. Probably a missing external dependency.
+2014-11-20 18:18:15,949 [26946:MainThread] (worker.py:327)  INFO  - Scheduled FileExists(path=s3://cusp-dataset-search-dev/input/2014-11-19/test.metadata) (PENDING)
+2014-11-20 18:18:15,949 [26946:MainThread] (worker.py:275)  DEBUG - Checking if FileExists(path=s3://cusp-dataset-search-dev/input/2014-11-19/test.json) is complete
+2014-11-20 18:18:16,125 [26946:MainThread] (worker.py:327)  INFO  - Scheduled FileExists(path=s3://cusp-dataset-search-dev/input/2014-11-19/test.json) (DONE)
+2014-11-20 18:18:16,126 [26946:MainThread] (worker.py:275)  DEBUG - Checking if Geocode(run_on_single_use_cluster=False, use_spot_instances=True, git_ref=not-set-flag, notify_on_job_finish=False, job_polling_interval=5, num_polling_retries=3, pig_version=0.12, input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19, output_data_path=s3://cusp-dataset-search-dev/output/2014-11-19/sw33-t3vk, geojson_s3_bucket=cusp-dataset-search-dev, geojson_s3_key=input/geo/ny_zipcodes.json, cluster_size=0) is complete
+2014-11-20 18:18:16,300 [26946:MainThread] (s3.py:89)  DEBUG - Path s3://cusp-dataset-search-dev/output/2014-11-19/sw33-t3vk does not exist
+2014-11-20 18:18:16,302 [26946:MainThread] (worker.py:327)  INFO  - Scheduled Geocode(run_on_single_use_cluster=False, use_spot_instances=True, git_ref=not-set-flag, notify_on_job_finish=False, job_polling_interval=5, num_polling_retries=3, pig_version=0.12, input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19, output_data_path=s3://cusp-dataset-search-dev/output/2014-11-19/sw33-t3vk, geojson_s3_bucket=cusp-dataset-search-dev, geojson_s3_key=input/geo/ny_zipcodes.json, cluster_size=0) (PENDING)
+2014-11-20 18:18:16,303 [26946:MainThread] (worker.py:275)  DEBUG - Checking if TransformInputData(input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19) is complete
+2014-11-20 18:18:16,469 [26946:MainThread] (s3.py:89)  DEBUG - Path s3://cusp-dataset-search-dev/work/2014-11-19/sw33-t3vk does not exist
+2014-11-20 18:18:16,471 [26946:MainThread] (worker.py:327)  INFO  - Scheduled TransformInputData(input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19) (PENDING)
+2014-11-20 18:18:16,471 [26946:MainThread] (worker.py:275)  DEBUG - Checking if FileExists(path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk.metadata) is complete
+2014-11-20 18:18:16,562 [26946:MainThread] (worker.py:327)  INFO  - Scheduled FileExists(path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk.metadata) (DONE)
+2014-11-20 18:18:16,563 [26946:MainThread] (worker.py:275)  DEBUG - Checking if FileExists(path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk) is complete
+2014-11-20 18:18:16,675 [26946:MainThread] (worker.py:327)  INFO  - Scheduled FileExists(path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk) (DONE)
+2014-11-20 18:18:16,675 [26946:MainThread] (interface.py:193)  INFO  - Done scheduling tasks
+2014-11-20 18:18:16,675 [26946:MainThread] (worker.py:436)  INFO  - Running Worker with 1 processes
+2014-11-20 18:18:16,676 [26946:MainThread] (worker.py:355)  DEBUG - Asking scheduler for work...
+2014-11-20 18:18:16,676 [26946:MainThread] (worker.py:463)  DEBUG - Pending tasks: 5
+2014-11-20 18:18:16,676 [26946:MainThread] (worker.py:59)  INFO  - [pid 26946] Worker Worker(salt=559456158, host=192-168-140-129.vpn.shanghai.nyu.edu, username=drp354, pid=26946) running   TransformInputData(input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19)
+2014-11-20 18:18:17,230 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 0 in sw33-t3vk transformed to common format
+2014-11-20 18:18:17,233 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 10 in sw33-t3vk transformed to common format
+2014-11-20 18:18:17,260 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 100 in sw33-t3vk transformed to common format
+2014-11-20 18:18:17,383 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 1000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:18,375 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 10000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:19,438 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 20000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:20,510 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 30000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:21,593 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 40000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:22,672 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 50000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:23,752 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 60000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:24,837 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 70000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:25,925 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 80000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:27,007 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 90000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:28,088 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 100000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:29,166 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 110000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:30,255 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 120000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:31,342 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 130000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:32,431 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 140000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:33,513 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 150000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:34,598 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 160000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:35,687 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 170000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:36,776 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 180000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:37,843 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 190000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:38,919 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 200000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:40,005 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 210000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:41,092 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 220000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:42,180 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 230000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:43,265 [26946:MainThread] (cusp_dataset_etl.py:173)  INFO  - Line 240000 in sw33-t3vk transformed to common format
+2014-11-20 18:18:48,234 [26946:MainThread] (worker.py:81)  INFO  - [pid 26946] Worker Worker(salt=559456158, host=192-168-140-129.vpn.shanghai.nyu.edu, username=drp354, pid=26946) done      TransformInputData(input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19)
+2014-11-20 18:18:48,236 [26946:MainThread] (worker.py:445)  DEBUG - 1 running tasks, waiting for next task to finish
+2014-11-20 18:18:48,237 [26946:MainThread] (worker.py:355)  DEBUG - Asking scheduler for work...
+2014-11-20 18:18:48,237 [26946:MainThread] (worker.py:463)  DEBUG - Pending tasks: 4
+2014-11-20 18:18:48,237 [26946:MainThread] (worker.py:59)  INFO  - [pid 26946] Worker Worker(salt=559456158, host=192-168-140-129.vpn.shanghai.nyu.edu, username=drp354, pid=26946) running   Geocode(run_on_single_use_cluster=False, use_spot_instances=True, git_ref=not-set-flag, notify_on_job_finish=False, job_polling_interval=5, num_polling_retries=3, pig_version=0.12, input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19, output_data_path=s3://cusp-dataset-search-dev/output/2014-11-19/sw33-t3vk, geojson_s3_bucket=cusp-dataset-search-dev, geojson_s3_key=input/geo/ny_zipcodes.json, cluster_size=0)
+2014-11-20 18:18:48,489 [26946:MainThread] (s3.py:89)  DEBUG - Path s3://cusp-dataset-search-dev/work/2014-11-19/Geocode-Running does not exist
+2014-11-20 18:18:48,897 [26946:MainThread] (mortartask.py:328)  INFO  - Submitted new job to mortar with job_id [546e776d5383c228a696f0c1]
+2014-11-20 18:18:49,161 [26946:MainThread] (mortartask.py:356)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] switched to status_code [validating_script], description: Validating Script
+2014-11-20 18:19:14,805 [26946:MainThread] (mortartask.py:356)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] switched to status_code [running], description: Running
+2014-11-20 18:19:14,806 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [0%]
+2014-11-20 18:19:35,448 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [2%]
+2014-11-20 18:19:40,565 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [4%]
+2014-11-20 18:19:50,792 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [6%]
+2014-11-20 18:19:55,901 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [8%]
+2014-11-20 18:20:01,011 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [9%]
+2014-11-20 18:20:06,136 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [11%]
+2014-11-20 18:20:11,234 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [12%]
+2014-11-20 18:20:16,359 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [13%]
+2014-11-20 18:20:21,615 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [15%]
+2014-11-20 18:20:26,729 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [17%]
+2014-11-20 18:20:31,835 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [19%]
+2014-11-20 18:20:36,950 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [20%]
+2014-11-20 18:20:42,071 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [21%]
+2014-11-20 18:20:47,189 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [23%]
+2014-11-20 18:20:52,303 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [24%]
+2014-11-20 18:20:57,412 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [26%]
+2014-11-20 18:21:02,526 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [28%]
+2014-11-20 18:21:07,749 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [30%]
+2014-11-20 18:21:12,859 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [31%]
+2014-11-20 18:21:17,979 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [32%]
+2014-11-20 18:21:23,162 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [34%]
+2014-11-20 18:21:28,276 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [35%]
+2014-11-20 18:21:33,395 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [37%]
+2014-11-20 18:21:38,502 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [39%]
+2014-11-20 18:21:43,616 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [40%]
+2014-11-20 18:21:48,720 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [41%]
+2014-11-20 18:21:53,839 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [43%]
+2014-11-20 18:21:58,961 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [45%]
+2014-11-20 18:22:04,077 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [46%]
+2014-11-20 18:22:09,185 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [48%]
+2014-11-20 18:22:14,297 [26946:MainThread] (mortartask.py:361)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] progress: [50%]
+2014-11-20 18:22:35,442 [26946:MainThread] (mortartask.py:356)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] switched to status_code [success], description: Success
+2014-11-20 18:22:35,637 [26946:MainThread] (s3.py:113)  DEBUG - Deleting work/2014-11-19/Geocode-Running from bucket cusp-dataset-search-dev
+2014-11-20 18:22:35,745 [26946:MainThread] (mortartask.py:279)  INFO  - Mortar job_id [546e776d5383c228a696f0c1] completed successfully
+2014-11-20 18:22:35,745 [26946:MainThread] (worker.py:81)  INFO  - [pid 26946] Worker Worker(salt=559456158, host=192-168-140-129.vpn.shanghai.nyu.edu, username=drp354, pid=26946) done      Geocode(run_on_single_use_cluster=False, use_spot_instances=True, git_ref=not-set-flag, notify_on_job_finish=False, job_polling_interval=5, num_polling_retries=3, pig_version=0.12, input_data_path=s3://cusp-dataset-search-dev/input/2014-11-19/sw33-t3vk, work_data_path=s3://cusp-dataset-search-dev/work/2014-11-19, output_data_path=s3://cusp-dataset-search-dev/output/2014-11-19/sw33-t3vk, geojson_s3_bucket=cusp-dataset-search-dev, geojson_s3_key=input/geo/ny_zipcodes.json, cluster_size=0)
+2014-11-20 18:22:35,745 [26946:MainThread] (worker.py:445)  DEBUG - 1 running tasks, waiting for next task to finish
+2014-11-20 18:22:35,746 [26946:MainThread] (worker.py:355)  DEBUG - Asking scheduler for work...
+2014-11-20 18:22:35,746 [26946:MainThread] (worker.py:346)  INFO  - Done
+2014-11-20 18:22:35,747 [26946:MainThread] (worker.py:347)  INFO  - There are no more tasks to run at this time
+2014-11-20 18:22:35,747 [26946:MainThread] (worker.py:352)  INFO  - There are 3 pending tasks possibly being run by other workers
+2014-11-20 18:22:35,749 [26946:Thread-1] (worker.py:164)  INFO  - Worker Worker(salt=559456158, host=192-168-140-129.vpn.shanghai.nyu.edu, username=drp354, pid=26946) was stopped. Shutting down Keep-Alive thread
+

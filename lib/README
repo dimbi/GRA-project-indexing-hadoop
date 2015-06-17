@@ -1,0 +1,1 @@
+To make it easy to bundle dependencies, you can include any needed jars in the lib folder of your project. Any jars in this folder will be automatically registered and available for use in your Pig scripts and UDFs.

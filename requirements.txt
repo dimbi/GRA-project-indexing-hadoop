@@ -1,0 +1,17 @@
+# Mortar comes with the Python standard libraries, NumPy, SciPy, and NLTK 
+# pre-installed. You can install additional Python packages by listing them out
+# here in pip requirements (https://pip.pypa.io/en/latest/reference/pip_install.html#requirements-file-format) format.
+#
+# Examples:
+#
+# 	Version 2.1 of python-dateutil
+#		python-dateutil==2.1
+#
+# 	Version 2.1 or higher of python-dateutil
+#		python-dateutil>=2.1
+#
+# 	Latest version of python-dateutil
+#		python-dateutil
+#
+# 	Your private library stored in S3
+#		s3://my-bucket/my-custom-lib.tar.gz

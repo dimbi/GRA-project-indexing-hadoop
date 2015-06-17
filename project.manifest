@@ -1,0 +1,15 @@
+# This file lists which files and directories the Mortar Development Framework
+# should sync with the cloud. By default, it includes only the standard Mortar
+# directories.  If you have extra resources that your code depends on, you can
+# add them to this file.
+#
+# See http://help.mortardata.com/technologies/mortar/how_mortar_projects_work
+# for more information.
+
+lib
+luigiscripts
+macros
+pigscripts
+udfs
+.gitignore
+project.properties
